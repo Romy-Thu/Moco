@@ -1,0 +1,74 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* eigen css */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ff81cb;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+  color:#1de4cd ;
+  text-decoration: underline;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.menu-bold {
+    font-family: "Futura Std",sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.menu {
+    font-family: "Futura Std",sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.social-media {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 20px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.social{
+    display: flex;
+    align-items: ;
+}

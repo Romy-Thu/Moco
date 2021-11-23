@@ -1,0 +1,258 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  @font-face {
+    font-family: 'CaslonGraphiqueEF-Regular';
+    src:url('CaslonGraphiqueEF-Regular.woff') format('woff'),
+          url('CaslonGraphiqueEF-Regular.woff2') format('woff2'),
+          url('CaslonGraphiqueEF-Regular.svg#CaslonGraphiqueEF-Regular') format('svg'),
+          url('CaslonGraphiqueEF-Regular.eot'),
+          url('CaslonGraphiqueEF-Regular.eot?#iefix') format('embedded-opentype'),
+          url('CaslonGraphiqueEF-Regular.ttf') format('truetype');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body{
+  font-family: "Futura Std",sans-serif;
+  color: black;
+  background-color: #ff81cb;
+}
+
+/*header & nav*/
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ff81cb;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: .5em 1.5em;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+color:#1de4cd ;
+text-decoration: underline;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-bold {
+  font-family: "Futura Std",sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.menu {
+  font-family: "Futura Std",sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+
+
+
+
+
+
+
+h2{ 
+  font-family: 'CaslonGraphiqueEF-Regular'; 
+  font-size: 5vw;
+  color: #ff81cb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.tickets{ 
+  font-family: 'CaslonGraphiqueEF-Regular'; 
+  font-size: 5vw;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+p{
+  font-size: 1.5vw;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main ul{
+  flex-grow: 1;
+  display:block;
+  flex-basis: 50%;
+} 
+
+li {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+img {
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit: cover;
+}
+
+
+main li {
+  position:relative;
+  
+  display:flex;
+  flex-direction:column-reverse;
+  justify-content:flex-end;
+  
+  background-color:var(--background-highlight-color);
+  box-shadow:0 0 1rem , .25rem .25rem .5rem var(--shadow-color);
+} 
+
+.menu_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity .3s ease-in;
+  z-index: 2;
+}
+
+.menu_item {
+  color: #fff;
+}
+
+/* @media (min-width:24em) {
+    main ul {
+      grid-template-columns: repeat( auto-fit, minmax(20em, 1fr) );
+    }
+  } */
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* round button */
+
+.shop-button.slide-up {
+  bottom: 40px;
+}
+
+.shop-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  border-radius: 100%;
+  line-height: 1;
+  color: #fff;
+}
+
+.shop-button-background {
+  z-index: 198;
+  pointer-events: none;
+  animation: breathing 3s ease-out infinite normal;
+  transition: background-color .3s;
+}
+
+.shop-button-background {
+    display: inline-block;
+    right: 88px;
+    bottom: -32px;
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    border-radius: 50%;
+    transition: bottom .3s ease;
+}
+
+.shop-button-text {
+  font-family: CaslonGraphiqueEF,sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: -2.5px;
+  max-width: 70em;
+  font-size: 35px;
+  margin-bottom: 18px;
+} 
+
+a{
+
+}

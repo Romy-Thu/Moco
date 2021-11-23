@@ -40,7 +40,7 @@ https://mocomuseum.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home page  
-<img src="images/homepage.jpg" width="" alt="Start pagina van moco">
+<img src="images/amsterdaminfo.jpg" width="" alt="Start pagina van moco">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  

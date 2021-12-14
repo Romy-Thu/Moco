@@ -255,7 +255,7 @@ Ipad
 <img src="images/screenshots/Screenshot 2021-12-14 at 09.52.12.png" width="375px" alt="Screenshot ipad">
 <img src="images/screenshots/Screenshot 2021-12-14 at 09.52.18.png" width="375px" alt="Screenshot ipad">
 
-Ipad
+Mobiel
 <img src="images/screenshots/Screenshot 2021-12-14 at 09.45.59.png" width="375px" alt="Screenshot mobiel">
 <img src="images/screenshots/Screenshot 2021-12-14 at 09.50.13.png" width="375px" alt="Screenshot mobiel">
 <img src="images/screenshots/Screenshot 2021-12-14 at 09.51.19.png" width="375px" alt="Screenshot mobiel">

@@ -228,14 +228,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 Het coderen ging in het begin erg moeizaam en ik liep ook een weekje vast. 
 Bij het hamburger menu liep ik erg vast, maar de student assistent heeft mij geholpen.
-<img src="images/test/Screenshot 2021-12-08 at 09.31.50.png" width="375px" alt="Hamburger menu">
 
 
 Ook was de shop en book your ticket menu maken erg moeilijk. (ik heb het geprobeerd maar het is niet perfect zoals ik wilde)
-<img src="images/test/Screenshot 2021-12-08 at 09.31.50.png" width="375px" alt="Screenshot mobiel">
 
 Wat wel goed ging, was het maken van de grid, na de oefeningen begreep ik het en kon ik het zo maken. 
-<img src="images/test/Screenshot 2021-12-08 at 09.31.50.png" width="375px" alt="grid">
 
 Voor de volgende keer moet ik niet alles tegelijk willen maken, maar stap voor stap. ik heb gemerkt dat ik graag alles tegelijk wil doen en dat ik dan door de war raak, door de chaos
 

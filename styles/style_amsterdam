@@ -1,0 +1,51 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CaslonGraphiqueEF-Regular';
+    src:url('CaslonGraphiqueEF-Regular.woff') format('woff'),
+          url('CaslonGraphiqueEF-Regular.woff2') format('woff2'),
+          url('CaslonGraphiqueEF-Regular.svg#CaslonGraphiqueEF-Regular') format('svg'),
+          url('CaslonGraphiqueEF-Regular.eot'),
+          url('CaslonGraphiqueEF-Regular.eot?#iefix') format('embedded-opentype'),
+          url('CaslonGraphiqueEF-Regular.ttf') format('truetype');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body{
+  font-family: "Futura Std",sans-serif;
+  color: black;
+  background-color: #794865; }
+
+  
+main> section {
+      margin-left: 2em; }
+  
+
+main section > section {
+    background-color: #934040f;
+    padding-left: 4em; }
+
+h1{
+    color: blue;
+}
+    
+  
+    
+
+
+
+
+
+
+
+
+
+

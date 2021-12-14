@@ -1,0 +1,419 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CaslonGraphiqueEF-Regular';
+    src:url('CaslonGraphiqueEF-Regular.woff') format('woff'),
+          url('CaslonGraphiqueEF-Regular.woff2') format('woff2'),
+          url('CaslonGraphiqueEF-Regular.svg#CaslonGraphiqueEF-Regular') format('svg'),
+          url('CaslonGraphiqueEF-Regular.eot'),
+          url('CaslonGraphiqueEF-Regular.eot?#iefix') format('embedded-opentype'),
+          url('CaslonGraphiqueEF-Regular.ttf') format('truetype');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/*******************/
+/******ROOT*********/
+/*******************/
+
+:root{
+   --text-color: #ff81cb ; 
+   --text-color-p: #000000;
+   --text-color-2: #ffffff;
+  
+   --background-color: #ff81cb ; 
+   --secondary-background-color: #ffffff;
+   --third-background-color: #000000;
+
+  }
+
+
+/*******************/
+/******general******/
+/*******************/
+
+body{
+    font-family: "Futura Std",sans-serif;
+    
+    color: var(--text-color-p);
+    background-color: var(--background-color)
+}
+
+main{
+    display: grid;
+    grid-template-columns:auto auto;
+
+}
+
+li{
+    overflow: hidden;
+     /* alles buiten de li kader wordt verstopt, zodat als je er over heen hovert, de foto er niet uitsteekt */
+}
+
+/*******************/
+/****GENRAL TEXT****/
+/*******************/
+h1{
+    font-family: 'CaslonGraphiqueEF-Regular'; 
+
+    color: var(--text-color-p);
+
+    font-size: 4.3vw;
+    letter-spacing: -2.5px;
+}
+
+h2{
+    font-family: 'CaslonGraphiqueEF-Regular'; 
+
+    color: var(--text-color);
+}
+
+
+/*******************/
+/******HEADER*******/
+/*******************/
+
+header{
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    background-color: transparent;
+   
+    height: 5em;
+    width: 100%;
+
+    z-index: 100;
+}
+
+/******LOGO*******/
+
+
+
+/*******************/
+/********NAV********/
+/*******************/
+
+
+.logo{
+        margin: 0 auto;
+        width: 100px;
+        text-align:center;
+    
+}
+
+/********BUTTON********/  
+nav button{
+    position: fixed;
+  
+    height: 4em;
+    width: 4em;
+  
+    z-index: 100;
+  
+    background-color:transparent;
+    border: none;
+  
+    padding-top: 2em;
+  
+    top:2em;
+    left: 0;
+  }
+  
+nav button span{
+    position: absolute;
+    
+    background-color: var(--third-background-color);
+    width: 5em;
+    height: 3px;
+  }
+  
+  nav button span:nth-of-type(1){
+    top: 0;
+    width: 3em;
+  }
+  
+  nav button span:nth-of-type(2){
+    top: 1em;
+    width: 3em;
+  }
+  
+  nav button span:nth-of-type(3){
+    top: 2em;
+    width: 3em;
+  }
+  
+  .isactive button span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .isactive button span:nth-child(1) {
+    transform: translateY(0.625em) rotate(45deg);
+  }
+  
+  .isactive button span:nth-child(3) {
+    transform: translateY(-1.28em) rotate(-45deg);
+  }
+  
+  .isactive  nav{
+    display: block;
+    animation: fade .5s;
+  }
+  
+/***NAV UL/LI*****/
+  nav ul {
+    position: fixed;
+  
+    visibility: hidden;
+    text-align: center;
+  
+    background-color: var(--secondary-background-color);
+  
+    width: 100%;
+  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  } 
+  
+nav ul{
+    padding-top: 25%;
+}
+  
+  nav li a{
+      color: var(--text-color);
+
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.9em;
+      text-align: center;
+
+      display: inline-block;
+     
+      padding: .5em 1.5em;
+  }
+  
+  .isactive nav ul {
+    visibility: visible;
+  }
+
+  
+  nav ul li a:hover{
+    color: var(--text-color);
+    text-decoration: underline;
+  }
+  
+/********language*******/  
+  
+header > ul{
+    letter-spacing: .1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+header > ul li{
+    font-size: 0.8em;
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+header > ul li span:hover{
+    text-decoration: underline;
+
+    display: inline-block;
+}
+
+
+
+/********Social media*******/
+header ul:nth-of-type(2){
+    letter-spacing: .1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+header ul:nth-of-type(2) li{
+    font-size: 0.8em;
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+header ul:nth-of-type(2) li span:hover{
+    text-decoration: underline;
+
+    display: inline-block;
+}
+
+header ul:nth-of-type(2) li img{
+    width: 25px;
+} 
+
+
+/*******************/
+/***Media Query*****/
+/*******************/
+
+
+@media screen and (max-width: 45em){
+    main{
+
+      grid-template-columns: 1fr ;
+    }
+
+    header{
+        background-color: var(--secondary-background-color);
+    }
+
+    header > ul {
+        position: absolute;
+    
+        bottom: -40px;
+        height: 40px;
+        background: #fff;
+        text-align: center;
+        padding-top: 14px;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #f5f5f5;
+    }
+
+    header ul li {
+        font-size: .6em;
+    }
+
+   
+
+   }
+
+   
+@media screen and (max-width: 120em){
+   
+    header > ul {
+        right: 0;
+    }
+   }
+
+
+
+
+
+
+/*******************/
+/**PAGE AMSTERDAM***/
+/*******************/
+    header{
+    position: relative;
+        }
+
+    h1{
+        margin-bottom: 0.5em;
+    }
+
+    h2{
+        font-family: "Futura Std",sans-serif;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+
+    p{
+        color: var(--text-color);
+    }
+
+    main section article:nth-of-type(1),
+    main section article:nth-of-type(2,)
+    main section article:nth-of-type(3){
+        margin-left:8em;
+    }
+
+    /**Titel van de Tijden***/
+    main section article:nth-of-type(1) > p:nth-of-type(1),
+    main section article:nth-of-type(1) > p:nth-of-type(2){
+        font-family: "Futura Std",sans-serif;
+        font-size: 4.8em;
+        font-weight: 600;
+
+        color: var(--text-color-2)
+
+    }
+
+    /**Titel- Christmas holiday & Reserve your tickets***/
+    main section article:nth-of-type(2) > p:nth-of-type(1),
+    main section article:nth-of-type(3) > p:nth-of-type(1){
+        font-family: "Futura Std",sans-serif;
+        font-size: 1em;
+        font-style: italic;
+
+        margin-bottom: 2em;
+
+    }
+
+    /**(Datum Grom december 24 to january)***/
+    main section article:nth-of-type(2) > p:nth-of-type(2){
+        font-family: "Futura Std",sans-serif;
+        font-size: 1em;
+    }
+
+
+ 
+
+
+    /**Section Achtergrond***/
+    section:nth-of-type(1){
+    background-color: var(--background-color);
+
+    margin-top: 2em;
+    }
+
+    section:nth-of-type(2){
+        background-color: #fff;
+    
+        margin-top: 2em;
+        }
+
+
+    /**INHOUD KADER dat in de eerste section is***/
+    main article:nth-of-type(2),
+    main article:nth-of-type(3){
+    background-color: var(--secondary-background-color);
+
+    padding-left: 1em;
+    padding-top: 1em;
+
+    width: 60%;
+    }
+
+    main section article:nth-of-type(3){
+        padding-bottom: 1em;
+    }
+
+    
+    
+
+
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+ 

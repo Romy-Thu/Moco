@@ -284,5 +284,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 6. https://www.w3schools.com/html/html_tables.asp
 7. https://www.w3schools.com/cssref/pr_text_text-decoration.asp
 8. https://www.w3schools.com/howto/howto_css_image_center.asp
+9. https://www.seobility.net/en/wiki/Media_Queries
 
 </details>
